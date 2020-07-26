@@ -7,6 +7,7 @@ import { IPageInfo } from '../interfaces/PageInfo/IPageInfo';
   templateUrl: './nav-bar.component.html',
 })
 export class NavBarComponent implements OnInit {
+
   public get getPageInfo(): IPageInfo {
     return this.pageInfoService.GetPageData;
   }

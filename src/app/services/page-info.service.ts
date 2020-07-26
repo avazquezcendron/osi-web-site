@@ -13,6 +13,10 @@ export class PageInfoService {
     return this.data;
   }
 
+  public get DataLoaded(): boolean{
+    return this.dataLoaded;
+  }
+
   constructor(private http: HttpClient) {
     this.http.get<IPageInfo>('../assets/data/page.info.json').subscribe((jsonData) => {
       this.data = jsonData;

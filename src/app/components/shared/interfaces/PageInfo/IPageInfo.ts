@@ -7,7 +7,7 @@ export interface IPageInfo {
 
 export interface IFooter {
   email: string;
-  footerCopyright: string;
+  copyright: string;
 }
 
 export interface IIndex {
