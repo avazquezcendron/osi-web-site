@@ -1,0 +1,18 @@
+{
+  "title": "Osi Control & Computadoras",
+  "navBar": {
+    "navBarTitle": "Osi",
+    "menu": {
+      "subMenu1": "Portfolio",
+      "subMenu2": "Services",
+      "subMenu3": "How We Work",
+      "subMenu4": "News",
+      "contactUs": "Contact Us"
+    }
+  },
+  "footer": {
+    "email": "vazquezgus@outlook.com",
+    "footerCopyright": "Osi Control & Computadoras - All Rights Reserved"
+  },
+  "index": {}
+}

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark navbar-transparent fixed-top sticky-navigation px-md-5">
   <a class="navbar-brand" routerLink="/">
-      Osi
+      {{ this.getPageInfo.navBar.navBarTitle }}
   </a>
   <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
           data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,20 +9,20 @@
   <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-              <a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
+              <a class="nav-link page-scroll" href="#portfolio">{{this.getPageInfo.navBar.menu.subMenu1}}</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link page-scroll" href="#services">Services</a>
+              <a class="nav-link page-scroll" href="#services">{{this.getPageInfo.navBar.menu.subMenu2}}</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link page-scroll" href="#process">How we work</a>
+              <a class="nav-link page-scroll" href="#process">{{this.getPageInfo.navBar.menu.subMenu3}}</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link page-scroll" href="#news">News</a>
+              <a class="nav-link page-scroll" href="#news">{{this.getPageInfo.navBar.menu.subMenu4}}</a>
           </li>
       </ul>
       <form class="form-inline ml-auto ml-md-0">
-          <a href="#contact" class="btn btn-light page-scroll">Contact Us</a>
+          <a href="#contact" class="btn btn-light page-scroll">{{this.getPageInfo.navBar.menu.contactUs}}</a>
       </form>
   </div>
 </nav>

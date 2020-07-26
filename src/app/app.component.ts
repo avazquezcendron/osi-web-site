@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PageInfoService } from './services/page-info.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'osi-web-site';
+  constructor(private pageInfoService: PageInfoService) {
+    // console.log(this.pageInforService.);
+  }
 }
