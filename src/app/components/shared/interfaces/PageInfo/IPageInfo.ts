@@ -3,6 +3,9 @@ export interface IPageInfo {
   navBar: INavBar;
   footer: IFooter;
   index: IIndex;
+  header: IHeader;
+  services: IServices;
+  contact: IContact;
 }
 
 export interface IFooter {
@@ -10,8 +13,7 @@ export interface IFooter {
   copyright: string;
 }
 
-export interface IIndex {
-}
+export interface IIndex {}
 
 export interface INavBar {
   navBarTitle: string;
@@ -24,4 +26,34 @@ export interface IMenu {
   subMenu3: string;
   subMenu4: string;
   contactUs: string;
+}
+
+export interface IHeader {
+  title: string;
+  description: string;
+}
+
+export interface IServices {
+  title: string;
+  description: string;
+  services: IService[];
+}
+
+export interface IService {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface IContact {
+  title: string;
+  description: string;
+  labelBtnEnviar: string;
+  team: ITeam[];
+}
+
+export interface ITeam {
+  name: string;
+  role: string;
+  img: string;
 }

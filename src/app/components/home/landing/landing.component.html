@@ -3,19 +3,18 @@
     <div class="container">
         <div class="row vh-md-100">
             <div class="col-md-7 mx-auto my-auto text-center">
-                <h1 class="text-white">We build mobile apps for the brands you care the most.</h1>
-                <p class="lead text-light">Being a Europe's leading app development agency, we have developed over 1,000
-                    mobile apps which are downloaded billions of times.</p>
+                <h1 class="text-white">{{ this.getPageInfo.header.title }}</h1>
+                <p class="lead text-light">{{ this.getPageInfo.header.description }}</p>
             </div>
         </div>
     </div>
     <div  class="cover-arrow bounce d-none d-md-block">
-        <a href="#about" class="page-scroll"><em class="text-white" data-feather="chevrons-down"></em></a>
+        <a href="#services" class="page-scroll"><i-feather class="text-white" name="chevrons-down"></i-feather></a>
     </div>
 </section>
 
 <!-- portfolio section -->
-<section class="py-7 portfolio" id="portfolio">
+<!-- <section class="py-7 portfolio" id="portfolio">
     <div class="container">
         <div class="row">
             <div class="col-md-7 mx-auto text-center">
@@ -130,35 +129,36 @@
             <div class="press-item col-lg-2 col-md-4 col-6"><a href="#"><img class="img-fluid" src="assets/img/press/press-6.png" alt=""></a></div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!--services section-->
 <section class="bg-light py-7" id="services">
     <div class="container">
         <div class="row">
             <div class="col-md-7 mx-auto text-center">
-                <h2>Things we do</h2>
+                <h2>{{ this.getPageInfo.services.title }}</h2>
                 <div class="divider bg-dark mx-auto"></div>
-                <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in nisi commodo, tempus odio a, vestibulum nibh.</p>
+                <p class="text-muted lead">{{ this.getPageInfo.services.description }}</p>
             </div>
         </div>
         <div class="row mt-5">
             <div class="col-md-10 mx-auto">
                 <div class="row card-services">
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-6 mb-3" *ngFor="let service of this.getPageInfo.services.services">
                         <div class="card">
                             <div class="card-body text-center">
                                 <div class="icon-box border-box">
                                     <div class="icon-box-inner small-xs text-primary">
-                                        <span data-feather="smartphone" width="30" height="30"></span>
+                                      <i-feather [name]="service.icon" style="width: 30px; height: 30px;"></i-feather>
+                                        <!-- <span data-feather="globe" width="30" height="30"></span> -->
                                     </div>
                                 </div>
-                                <h5 class="mt-0 mb-3">Mobile apps</h5>
-                                Nam liber tempor cum soluta nobis eleifend option congue nihil imper.
+                                <h5 class="mt-0 mb-3">{{ service.title }}</h5>
+                                {{ service.description }}
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <!-- <div class="col-md-6 mb-3">
                         <div class="card">
                             <div class="card-body text-center">
                                 <div class="icon-box border-box">
@@ -196,20 +196,20 @@
                                 Nam liber tempor cum soluta nobis eleifend option congue nihil imper.
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="col-md-6 mx-auto text-center">
+                <!-- <div class="col-md-6 mx-auto text-center">
                     <hr class="my-5"/>
                     <h4 class="mb-3">Need a custom mobile app?</h4>
                     <a href="#contact" class="btn btn-primary">Work with us</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 </section>
 
 <!--call to action-->
-<section class="bg-hero py-8" style="background-image: url(assets/img/parallex2.jpg)">
+<!-- <section class="bg-hero py-8" style="background-image: url(assets/img/parallex2.jpg)">
     <div class="container">
         <div class="row">
             <div class="col-md-7 mx-auto text-center">
@@ -220,10 +220,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!--process-->
-<section class="py-7" id="process">
+<!-- <section class="py-7" id="process">
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto text-center">
@@ -319,10 +319,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!--blog section-->
-<section class="py-7 bg-light" id="news">
+<!-- <section class="py-7 bg-light" id="news">
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto">
@@ -363,33 +363,24 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!--contact section-->
 <section class="py-7" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center img-stack">
-                <a href="#" data-toggle="tooltip" title="John Steiner<br>CEO & Founder" data-html="true">
-                    <img src="assets/img/team/team-1.jpg" class="img-fluid img-team rounded-circle" alt="Team 1"/>
-                </a>
-                <a href="#" data-toggle="tooltip" title="Sabstein Mugar<br>CTO" data-html="true">
-                    <img src="assets/img/team/team-2.jpg" class="img-fluid img-team rounded-circle" alt="Team 2"/>
-                </a>
-                <a href="#" data-toggle="tooltip" title="Alexandra Jens<br>Creative Director" data-html="true">
-                    <img src="assets/img/team/team-3.jpg" class="img-fluid img-team rounded-circle" alt="Team 3"/>
-                </a>
-                <a href="#" data-toggle="tooltip" title="Kathrine Jones<br>Marketing Head" data-html="true">
-                    <img src="assets/img/team/team-4.jpg" class="img-fluid img-team rounded-circle" alt="Team 4"/>
-                </a>
+              <a *ngFor="let member of this.getPageInfo.contact.team" href="#" data-toggle="tooltip" title="{{member.name}}<br>{{member.role}}" data-html="true">
+                  <img src="assets/img/team/{{member.img}}" class="img-fluid img-team rounded-circle" alt="{{member.name}}"/>
+              </a>
             </div>
         </div>
         <div class="row mt-5">
             <div class="col-md-6 mx-auto text-center">
-                <h2>Want to work with us?</h2>
+                <h2>{{this.getPageInfo.contact.title}}</h2>
                 <div class="divider bg-primary mx-auto"></div>
                 <p class="text-muted lead">
-                    Nam liber tempor cum soluta nobis eleifend option congue nihil imper.
+                    {{this.getPageInfo.contact.description}}
                 </p>
             </div>
         </div>
@@ -399,32 +390,32 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your name">
+                                <input type="text" class="form-control" placeholder="Nombre" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="email"  class="form-control" placeholder="Your email address">
+                                <input type="email"  class="form-control" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="tel"  class="form-control" placeholder="Phone number">
+                                <input type="tel"  class="form-control" placeholder="Tel.">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="url"  class="form-control" placeholder="Your website">
+                                <input type="url"  class="form-control" placeholder="Website">
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-group">
-                                <textarea rows="5"  class="form-control" placeholder="What are you looking for?"></textarea>
+                                <textarea rows="5"  class="form-control" placeholder="Haz tu consulta..." required></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="text-center mt-3">
-                        <button class="btn btn-primary">Send your message</button>
+                        <button class="btn btn-primary">{{this.getPageInfo.contact.labelBtnEnviar}}</button>
                     </div>
                 </form>
             </div>

@@ -1,7 +1,7 @@
 $(function () {
 
     // init feather icons
-    feather.replace();
+    //feather.replace();
 
     // init tooltip & popovers
     $('[data-toggle="tooltip"]').tooltip();
@@ -58,7 +58,7 @@ $(function () {
     });
     $('.color-switcher ul li').click(function () {
         var color = $(this).attr('data-color');
-        $('#theme-color').attr("href", "css/" + color + ".css");
+        $('#theme-color').attr("href", "./assets/css/" + color + ".css");
         $('.color-switcher ul li').removeClass('active');
         $(this).addClass('active');
     });

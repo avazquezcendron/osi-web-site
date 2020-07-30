@@ -7,12 +7,10 @@ import { IPageInfo } from '../interfaces/PageInfo/IPageInfo';
   templateUrl: './nav-bar.component.html',
 })
 export class NavBarComponent implements OnInit {
+  constructor(private pageInfoService: PageInfoService) {}
 
   public get getPageInfo(): IPageInfo {
     return this.pageInfoService.GetPageData;
   }
-
-  constructor(private pageInfoService: PageInfoService) {}
-
   ngOnInit(): void {}
 }

@@ -1,25 +1,26 @@
 <nav class="navbar navbar-expand-md navbar-dark navbar-transparent fixed-top sticky-navigation px-md-5">
   <a class="navbar-brand" routerLink="/">
-      {{ this.getPageInfo.navBar.navBarTitle }}
+    <img src="assets/img/logo3.png" alt="logo"  style="max-width: 60px;">
+    {{this.getPageInfo.navBar.navBarTitle}}
   </a>
   <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
           data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span data-feather="menu"></span>
+        <i-feather name="menu"></i-feather>
   </button>
   <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-              <a class="nav-link page-scroll" href="#portfolio">{{this.getPageInfo.navBar.menu.subMenu1}}</a>
+              <a class="nav-link page-scroll" href="">{{this.getPageInfo.navBar.menu.subMenu1}}</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link page-scroll" href="#services">{{this.getPageInfo.navBar.menu.subMenu2}}</a>
+              <a class="nav-link page-scroll" href="">{{this.getPageInfo.navBar.menu.subMenu2}}</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link page-scroll" href="#process">{{this.getPageInfo.navBar.menu.subMenu3}}</a>
+              <a class="nav-link page-scroll" href="">{{this.getPageInfo.navBar.menu.subMenu3}}</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
               <a class="nav-link page-scroll" href="#news">{{this.getPageInfo.navBar.menu.subMenu4}}</a>
-          </li>
+          </li> -->
       </ul>
       <form class="form-inline ml-auto ml-md-0">
           <a href="#contact" class="btn btn-light page-scroll">{{this.getPageInfo.navBar.menu.contactUs}}</a>

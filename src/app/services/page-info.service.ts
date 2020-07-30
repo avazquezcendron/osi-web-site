@@ -18,7 +18,7 @@ export class PageInfoService {
   }
 
   constructor(private http: HttpClient) {
-    this.http.get<IPageInfo>('../assets/data/page.info.json').subscribe((jsonData) => {
+    this.http.get<IPageInfo>('../assets/data/page.info-es.json').subscribe((jsonData) => {
       this.data = jsonData;
       this.dataLoaded = true;
       // console.log(this._data);
