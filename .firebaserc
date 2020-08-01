@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "osi-web-site": {
+      "hosting": {
+        "osi-web-site": [
+          "osi-web-site"
+        ]
+      }
+    }
+  }
+}
