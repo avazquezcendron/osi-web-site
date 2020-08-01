@@ -117,8 +117,13 @@
               "devServerTarget": "osi-web-site:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "osi-web-site"
 }
