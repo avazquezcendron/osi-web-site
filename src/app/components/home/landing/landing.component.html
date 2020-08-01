@@ -1,5 +1,5 @@
    <!--hero header-->
-   <section class="py-7 py-md-0 bg-hero" style="background-image: url(./assets/img/wpper1.jpg)" id="home">
+   <section class="py-7 py-md-0 bg-hero" style="background-image: url(assets/img/wpper1.jpg)" id="home">
     <div class="container">
         <div class="row vh-md-100">
             <div class="col-md-7 mx-auto my-auto text-center">
@@ -327,8 +327,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center img-stack">
-              <a *ngFor="let member of this.getPageInfo.contact.team" href="" data-toggle="tooltip" title="{{member.name}}<br>{{member.role}}" data-html="true">
-                  <img src="./assets/img/team/{{member.img}}" class="img-fluid img-team rounded-circle" alt="{{member.name}}"/>
+              <a *ngFor="let member of this.getPageInfo.contact.team" data-toggle="tooltip" title="{{member.name}}<br>{{member.role}}" data-html="true">
+                  <img src="assets/img/team/{{member.img}}" class="img-fluid img-team rounded-circle" alt="{{member.name}}"/>
               </a>
             </div>
         </div>
