@@ -18,10 +18,10 @@ export class PageInfoService {
   }
 
   constructor(private http: HttpClient) {
-    this.http.get<IPageInfo>('assets/data/page.info-es.json').subscribe((jsonData) => {
+    const url = 'https://osi-web-site.firebaseio.com/pageInfo.json';
+    this.http.get<IPageInfo>(url).subscribe((jsonData) => {
       this.data = jsonData;
       this.dataLoaded = true;
-      // console.log(this._data);
     });
   }
 }

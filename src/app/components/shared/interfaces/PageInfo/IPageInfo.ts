@@ -41,7 +41,7 @@ export interface IServices {
 
 export interface IService {
   title: string;
-  description: string;
+  description: IServiceItem[];
   icon: string;
 }
 
@@ -56,4 +56,8 @@ export interface ITeam {
   name: string;
   role: string;
   img: string;
+}
+
+export interface IServiceItem {
+  item: string;
 }

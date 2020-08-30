@@ -134,14 +134,16 @@
 <!--services section-->
 <section class="bg-light py-7" id="services">
     <div class="container">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-7 mx-auto text-center">
                 <h2>{{ this.getPageInfo.services.title }}</h2>
                 <div class="divider bg-primary mx-auto"></div>
                 <p class="text-muted lead">{{ this.getPageInfo.services.description }}</p>
             </div>
-        </div>
-        <div class="row mt-5">
+        </div> -->
+        <div class="divider bg-primary mx-auto"></div>
+
+        <div class="row mt-2">
             <div class="col-md-10 mx-auto">
                 <div class="row card-services">
                     <div class="col-md-6 mb-3" *ngFor="let service of this.getPageInfo.services.services">
@@ -154,7 +156,9 @@
                                     </div>
                                 </div>
                                 <h5 class="mt-0 mb-3">{{ service.title }}</h5>
-                                {{ service.description }}
+                                <div *ngFor="let item of service.description" class="text-center">
+                                    {{ item.item }}
+                                </div>
                             </div>
                         </div>
                     </div>
